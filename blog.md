@@ -2,6 +2,7 @@
 layout: null
 title: Blog
 ---
+
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -42,3 +43,4 @@ title: Blog
     </footer>
 </body>
 </html>
+
