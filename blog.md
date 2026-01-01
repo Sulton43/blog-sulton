@@ -1,3 +1,8 @@
+---
+layout: null
+title: Blog
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +33,7 @@
         </div>
     </header>
 
----
-layout: null
-title: Blog
----
+
 
 <main class="container py-5">
     <h1>Mening maqolalarim</h1>
@@ -58,6 +60,7 @@ title: Blog
 </body>
 
 </html>
+
 
 
 
