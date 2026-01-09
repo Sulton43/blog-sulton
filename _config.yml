@@ -12,6 +12,8 @@ collections:
     output: true
     permalink: /reads/:path/
 
+
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
