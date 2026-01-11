@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Sulton Nizomiddin</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content container">
+            <div class="logo"><a href="{{ '/' | relative_url }}">Sulton Nizomiddin's Blog</a></div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ '/blog.html' | relative_url }}">Blog</a></li>
+                    <li><a href="{{ '/read.html' | relative_url }}">Reads</a></li>
+                    <li><a href="{{ '/AboutMe.html' | relative_url }}">About Me</a></li>
+                </ul>
+                <button id="theme-toggle">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <article class="post-content">
+            <h1 class="page-title">{{ page.title }}</h1>
+            <div class="post-meta" style="color: var(--gray); margin-bottom: 20px;">
+                {% if page.author %} <span>Muallif: {{ page.author }}</span> | {% endif %}
+                <span>{{ page.date | date: "%d-%m-%Y" }}</span>
+            </div>
+            <div class="entry-content">
+                {{ content }}
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"><p>&copy; 2026 Sulton Nizomiddin Blog</p></div>
+    </footer>
+
+    <script src="{{ '/js/script.js' | relative_url }}"></script>
+</body>
+</html>
